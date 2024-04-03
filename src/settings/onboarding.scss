@@ -2,7 +2,7 @@
 
 // POPOUT
 %onboardingEduPopout {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
 }
 %onboardingEduPopoutArrow {
   border-bottom-color: rgba(0, 0, 0, 0.8);
@@ -125,7 +125,7 @@
   border: 2px solid $main-color;
 }
 %onboardingQuestionDropdown {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
   border: 1px solid hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -180,23 +180,23 @@
   color: #fff;
 }
 
-%recommendedDeafultChannels {
+%onboardingRecommendedDefaultChannels {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-%updateChannelPermissionsMenu {
+%onboardingChannelPermissionsMenu {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-%updateChannelPermissionsItems {
+%onboardingChannelPermissionsItems {
   background-color: $hover-color;
 }
 
-%recommendedReadOnly {
+%onboardingRecommendedReadOnly {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 
-%pickAnEmoji {
+%onboardingPickAnEmoji {
   background-color: transparent;
   border: none;
   &:hover {
@@ -204,7 +204,7 @@
   }
 }
 
-%enterRoles {
+%onboardingEnterRoles {
   background-color: rgba(0, 0, 0, 0.4);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
