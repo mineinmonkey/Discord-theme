@@ -2,7 +2,8 @@
 %appMount {
   background: cv('bg.app.overlay');
 }
-%shakeable, body {
+%shakeable,
+body {
   background: transparent;
 }
 %bg {
@@ -22,16 +23,7 @@
   }
 }
 %backdrop {
-  &:after {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.overlay');
-    pointer-events: none;
-  }
-}
-%backdrop%backdropWithLayer {
-  background: none !important;
+  background: cv('bg.backdrop.overlay');
 }
 
 %loading {
