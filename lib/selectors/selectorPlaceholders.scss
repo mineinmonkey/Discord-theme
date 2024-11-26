@@ -522,14 +522,10 @@
 .gameIcon_bf1a22 {
   @extend %activityPanelGameIcon !optional;
 }
-.title_d1da5f {
-  // Duplicate Class
-  @extend %activityPanelTitle !optional;
-}
 .actions_bf1a22 {
   @extend %activityPanelActions !optional;
 }
-.liveBadge_bf1a22 {
+.liveBadge_aa73eb {
   @extend %panelLiveBadge !optional;
 }
 .noiseCancellationPopout_adcaac {
@@ -1283,10 +1279,13 @@
   @extend %commandTooltipPointer !optional;
 }
 .upsellTooltipWrapper_dafa63 {
-  @extend %upsellTooltipText !optional;
+  @extend %upsellTooltip !optional;
 }
 .caretTopCenter_dafa63 {
   @extend %upsellTooltipCaretTopCenter !optional;
+}
+.caretRightCenter_dafa63 {
+  @extend %upsellTooltipCaretRightCenter !optional;
 }
 .reactionTooltip_fba897 {
   @extend %reactionTooltip !optional;
@@ -1309,7 +1308,7 @@
 .scroller_fea3ef {
   @extend %guilds !optional;
 }
-.footer_aa1bff {
+.footer_d71945 {
   @extend %guildsFooter !optional;
 }
 .listItem_c96c45 {
@@ -2211,14 +2210,17 @@ pre {
 .repliedMessage_f9f2ca {
   @extend %messageReplied !optional;
 }
-.repliedMessageSpine_f9f2ca {
+.repliedMessageClickableSpine_f9f2ca {
   @extend %messageRepliedSpine !optional;
+}
+.repliedMessageContentHovered_f9f2ca {
+  @extend %messageRepliedContentHovered !optional;
 }
 .repliedTextPreview_f9f2ca {
   @extend %messageRepliedTextPreview !optional;
 }
-.clickable_f9f2ca {
-  @extend %messageRepliedTextPreviewClickable !optional;
+.repliedMessageClickableSpineHovered_f9f2ca  {
+  @extend %messageRepliedSpineHovered !optional;
 }
 .repliedTextContent_f9f2ca {
   @extend %messageRepliedTextContent !optional;
@@ -2342,6 +2344,9 @@ pre {
 }
 .forceShowLook_ec6b19 {
   @extend %reactionAddForceShow !optional;
+}
+.burstGlow_ec6b19 {
+  @extend %superReactionGlow !optional;
 }
 .spoilerMarkdownContent_aa9639 {
   @extend %spoilerMarkdownContent !optional;
@@ -2535,150 +2540,53 @@ pre {
 .footer_c5a065 {
   @extend %authModalFooter !optional;
 }
-.userProfileOuter_c69a7b {
+.outer_c69a7b {
   @extend %userProfileOuter !optional;
 }
-.userProfileOuterUnthemed_c69a7b {
-  @extend %userProfileOuterUnthemed !optional;
+.custom-profile-theme {
+  @extend %userProfileCustomTheme !optional;
 }
-.userProfileOuterThemed_c69a7b {
-  @extend %userProfileOuterThemed !optional;
+.inner_c69a7b {
+  @extend %userProfileInner !optional;
 }
-.statusBubbleOuter_d0a252 {
+.biteSize_c69a7b {
+  @extend %userProfileSmall !optional;
+}
+.fullSize_c69a7b {
+  @extend %userProfileFull !optional;
+}
+.statusBubbleOuter_d22603 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_d0a252 {
+.statusBubble_d22603 {
   @extend %userProfileStatusBubble !optional;
-}
-.userPanelInnerThemed_c69a7b {
-  @extend %userProfileDMInnerThemed !optional;
-}
-.badgeList_ab525a {
-  @extend %userProfileDMBadgeList !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userProfileDMOverlayBackground !optional;
-}
-.actionColor_fc39e7 {
-  @extend %userModalActivityButton !optional;
 }
 .banner_d5fdb1 {
   @extend %userProfileBanner !optional;
 }
-.userPopoutOuter_c69a7b {
-  @extend %userPopoutOuter !optional;
+.container_b64375 {
+  @extend %userProfileBadgeList !optional;
 }
-.biteSizeInner_c69a7b {
-  @extend %userPopoutInner !optional;
+.overlay_c69a7b {
+  @extend %userProfileOverlay !optional;
 }
-.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
-.userProfileInnerThemedWithBanner_c69a7b {
-  @extend %userPopoutInnerThemed !optional;
+.scroller_d53fbd {
+  @extend %userProfileOverlayScroller !optional;
 }
-.popoutBanner_c3e427 {
-  @extend %userPopoutBanner !optional;
+.connectedAccountContainer_ab12c6 {
+  @extend %userProfileConnectedAccountContainer !optional;
 }
-.popoutNoBannerPremium_c3e427 {
-  @extend %userPopoutNoBannerPremium !optional;
+.connectedAccountVerifiedIcon_ab12c6 {
+  @extend %userProfileConnectedAccountVerifiedIcon !optional;
 }
-.popoutBannerPremium_c3e427 {
-  @extend %userPopoutBannerPremium !optional;
+.connectedAccountOpenIcon_ab12c6 {
+  @extend %userProfileConnectedAccountOpenIcon !optional;
 }
-.profileBadges_f89da9 {
-  @extend %userPopoutProfileBadges !optional;
-}
-.userPopoutOverlayBackground_c69a7b {
-  @extend %userPopoutOverlayBackground !optional;
-}
-.profileCustomizationPreview_ab876d {
-  @extend %userPopoutCustomizationPreview !optional;
-}
-.activity_cd74cc {
-  @extend %userPopoutActivity !optional;
-}
-.buttonColor_cd74cc {
-  @extend %userPopoutActivityButton !optional;
-}
-.roles_fa2f72 {
-  @extend %userPopoutRoles !optional;
+.listRow_d2d6cb {
+  @extend %userProfileListRow !optional;
 }
 .note_d53fbd {
-  @extend %userPopoutNote !optional;
-}
-.menu_ad5fac {
-  @extend %userPopoutMenu !optional;
-}
-.userProfileModalOuter_c69a7b {
-  @extend %userModalOuter !optional;
-}
-.userProfileModalInner_c69a7b {
-  @extend %userModalInner !optional;
-}
-.modalBanner_c3e427 {
-  @extend %userModalBanner !optional;
-}
-.modalBannerPremium_c3e427 {
-  @extend %userModalBannerPremium !optional;
-}
-.badgeList_ec3b75 {
-  @extend %userModalBadgeList !optional;
-}
-.badgeList_b69b77 {
-  @extend %accountSettingsBadges !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userModalOverlayBackground !optional;
-}
-.body_b9fccc {
-  @extend %userModalBody !optional;
-}
-.tabBarContainer_b9fccc {
-  @extend %userModalTabBarContainer !optional;
-}
-.tabBar_c1519f {
-  @extend %userModalTabBarContainerNew !optional;
-}
-.userInfoSection_a24910 {
-  @extend %userModalInfoSection !optional;
-}
-.userInfoSectionHeader_a24910 {
-  @extend %userModalInfoSectionHeader !optional;
-}
-.connectedAccounts_f3eb60 {
-  @extend %userModalConnectedAccounts !optional;
-}
-.connectedAccountContainer_f3eb60 {
-  @extend %userModalConnectedAccountContainer !optional;
-}
-.connectedAccountIcon_f3eb60 {
-  @extend %userModalConnectedAccountIcon !optional;
-}
-.connectedAccountName_f3eb60 {
-  @extend %userModalConnectedAccountName !optional;
-}
-.connectedAccountVerifiedIcon_f3eb60 {
-  @extend %userModalConnectedAccountVerifiedIcon !optional;
-}
-.connectedAccountOpenIcon_f3eb60 {
-  @extend %userModalConnectedAccountOpenIcon !optional;
-}
-.listScroller_e4be58 {
-  @extend %userModalListScroller !optional;
-}
-.listRow_e4be58 {
-  @extend %userModalListRow !optional;
-}
-.listRowContent_e4be58 {
-  @extend %userModalListRowConent !optional;
-}
-.listName_e4be58 {
-  @extend %userModalListName !optional;
-}
-.guildNick_b26403 {
-  @extend %userModalListGuildNick !optional;
-}
-.note_c2dcc6 {
-  @extend %userModalNote !optional;
+  @extend %userProfileNote !optional;
 }
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
@@ -3763,7 +3671,7 @@ pre {
 .container_ac201b {
   @extend %roleAssignPopout !optional;
 }
-.loading_cea94f {
+.loading_f3e233 {
   @extend %loading !optional;
 }
 .container_b11c5e {
@@ -3811,17 +3719,20 @@ pre {
 .avatar_b69b77 {
   @extend %userSettingsAccountProfileAvatar !optional;
 }
+.badgeList_b69b77 {
+  @extend %userSettingsAccountBadgeList !optional;
+}
+.container_f4c122 {
+  @extend %userSettingsProfilePreview !optional;
+}
 .premiumFeatureBorder_c6d722 {
   @extend %userSettingsProfilePremiumBorder !optional;
 }
 .premiumBackground_c6d722 {
   @extend %userSettingsProfilePremiumBackground !optional;
 }
-.upsellOverlayContainer_eb49af {
-  @extend %userSettingsProfileUpsellOverlayContainer !optional;
-}
-.upsellOverlay_eb49af {
-  @extend %userSettingsProfileUpsellOverlay !optional;
+.upsellContainer_ad7baa {
+  @extend %userSettingsProfileUpsellContainer !optional;
 }
 .container_f7ea1b {
   @extend %userSettingsPrivacyStandingContainer !optional;
@@ -3911,7 +3822,7 @@ pre {
 .detailsBlock_a206c7 {
   @extend %userSettingsSubsPayDetailsBlock !optional;
 }
-.premiumSubscriptionAccountCredit_ca73a1 {
+.premiumSubscriptionAccountCredit_b7f69f {
   @extend %userSettingsSubsAccountCredit !optional;
 }
 .defaultIndicator_ede133 {
@@ -3959,6 +3870,12 @@ pre {
 }
 .notches_a1107d {
   @extend %userSettingsMicTestNotches !optional;
+}
+.sliderBar_b6e3f3 {
+  @extend %userSettingsVoiceSensitivity !optional;
+}
+.speaking_b6e3f3 {
+  @extend %userSettingsVoiceSensitivitySpeaking !optional;
 }
 .soundButtonSettingContainer_c801bb {
   @extend %userSettingsEntranceSoundButton !optional;
@@ -4914,26 +4831,35 @@ pre {
 .picker_cd703d {
   @extend %soundboard !optional;
 }
-.refresh_cd703d {
-  @extend %refresh !optional;
+.soundButton_f40049 {
+  @extend %soundboardButton !optional;
 }
-.soundButtonRefresh_f40049 {
-  @extend %soundboardSound !optional;
-}
-.soundNameRefresh_f40049 {
+.soundName_f40049 {
   @extend %soundboardSoundName !optional;
 }
-.soundAddButtonRefresh_c06ee5 {
-  @extend %soundboardAdd !optional;
+.hoverActiveBackground_f40049 {
+  @extend %soundboardSoundHover !optional;
 }
-.soundAddTextRefresh_c06ee5 {
+.soundAddText_c06ee5 {
   @extend %soundboardAddText !optional;
-}
-.secondaryButtonRefresh_f40049 {
-  @extend %soundboardSecondaryButton !optional;
 }
 .keybindHint_c66e5e {
   @extend %soundboardHint !optional;
+}
+.refresh_cd703d {
+  @extend %soundboardRefresh !optional;
+}
+.soundButtonRefresh_f40049 {
+  @extend %soundboardButtonRefresh !optional;
+}
+.soundNameRefresh_f40049 {
+  @extend %soundboardSoundNameRefresh !optional;
+}
+.soundAddTextRefresh_c06ee5 {
+  @extend %soundboardAddTextRefresh !optional;
+}
+.secondaryButtonRefresh_f40049Refresh {
+  @extend %soundboardSecondaryButton !optional;
 }
 .homeContainer_e85cee {
   @extend %homeContainer !optional;
